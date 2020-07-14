@@ -1,0 +1,127 @@
+<html>
+	<head>
+		<title>Contact Us</title>
+		<style type = "text/css">
+			body{
+				background-image:url(wall2.jpg);
+				color:white;
+				margin:30px;
+			}
+			a{
+				background-color:rgba(0,0,0,0.3);
+				font-size:22px;
+				color:white;
+				padding:10px;
+				text-align:right;
+				border:2px white solid;
+				text-decoration:none;
+				border-radius:10px;
+			}
+			a:hover{
+				text-decoration:underline;
+				background-color:rgba(255,255,255,0.5);
+				color:black;
+			}
+			h1{
+				font-size:40px;
+				text-align:center;
+			}
+			.same input,.same textarea, .city select, #sub input{
+				background-color:rgba(0,0,0,0.6);
+				color:white;
+				width:600px;
+				margin:15px;
+				padding:15px;
+				font-size:20px;
+				border:1.2px white solid;
+				border-left:4px white solid;
+				border-radius:8px;
+				position:relative;
+				left:25%;
+			}
+			::placeholder{
+				color:white;	
+			}
+			.city,.gender,.noti{
+				color:white;
+				font-size:30px;
+				margin-left:10px;
+				margin-top:20px;
+				position:relative;
+				left:25%;
+			}
+			.city select{
+				width:520px;
+				position:relative;
+				left:-0%;
+			}
+			.big{
+				width:2em;
+				height:1.4em;
+			}
+			#sub input{
+				width:120px;
+				border:4px white solid;
+			}
+			#sub input:hover{
+				background-color:rgba(255,255,255,0.4);
+				color:black;
+				text-decoration:underline;
+			}
+		</style>
+	</head>
+	<body>
+		<div class = "lk">
+			<br>
+			<a href = "hobbies.html">Hobbies</a> 
+			<a href = "movie.html">Fav Movies</a>
+			<a href = "wish.html">Wish List</a>
+			<a href = "contactme.html">Contact Us</a>
+		</div>
+		<h1>Contact Us</h1>
+		
+		<form  action = "Me.html" onsubmit = "alert('Thank You for Contacting Us! We will get back to you soon...')">
+			<div class = "same">
+				<input type = "text" placeholder = "Name">
+			</div>
+			<div class = "same">
+				<input type = "text" placeholder = "Email Id">
+			</div>
+			<div class = "same">
+				<textarea rows = "5" cols = "50" placeholder = "Enter Comments"></textarea>
+			</div>
+			<div class = "same">
+				<input type = "text" placeholder = "Phone No.">
+			</div>
+			<div class = "city">
+				City:
+				<select>
+					<option>Ahmedabad</option>
+					<option>Bengaluru</option>
+					<option>Chennai</option>
+					<option>Delhi</option>
+					<option>Kolkata</option>
+					<option>Mumbai</option>
+				</select>
+			</div>
+			<div class = "gender">
+				Gender:
+				<input type = "radio" name = "gen" class = "big">Male
+				<input type = "radio" name = "gen" class = "big">Female
+				<input type = "radio" name = "gen" class = "big">Others
+			</div>
+			<div class = "noti">
+				Notified By:
+				<input type = "checkbox" class = "big">Email
+				<input type = "checkbox" class = "big">Phone
+			</div>
+			<br><br>
+			<div id = "sub">
+				<input type = "submit">
+			</div>
+		</form>
+		
+		<br><br>
+		<a href = "Me.html">Back</a>
+	</body>
+</html>
